@@ -1,0 +1,50 @@
+.Project-Heading{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.Project-Container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards side by side on large screens */
+    grid-gap: 40px;
+}
+
+.Project-Card{
+    background: black;
+    padding: 1.2rem 1;
+}
+
+.Project-Card img{
+    width: 100%;
+}
+
+.Project-Title{
+    color: white;
+    padding: 1rem 0;
+}
+
+.Pro-Details p{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.Pro-Buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.Pro-Buttons .btn{
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width:740px){
+    .Project-Container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr; /* Stacks cards vertically on smaller screens */
+    }
+}

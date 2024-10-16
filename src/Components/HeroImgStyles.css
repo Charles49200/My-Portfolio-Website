@@ -1,0 +1,63 @@
+.Mask {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.intro-img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.Mask::after {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.Hero {
+    height: 75%;
+    width: 100%;
+} 
+
+.Content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.Content h1 {
+    font-size: 3rem; /* Reduced font size from 4rem to 3rem */
+    padding: 0.6rem 0 1rem;
+}
+
+.Hero, .Content p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/* Centering buttons */
+.button-container {
+    display: flex; /* Aligns buttons in a row */
+    justify-content: center; /* Centers buttons horizontally */
+}
+
+/* Ensuring buttons have margin for spacing */
+.Content .btn, .Content .btn-Light {
+    margin: 1rem 0.2rem; /* Adjusted to target buttons correctly */
+}
+
+@media screen and (max-width: 640px) {
+    .Hero, .Content h1 {
+        font-size: 2rem; /* Reduced font size from 4rem to 3rem */
+    }
+    
+    .Hero, .Content p {
+        font-size: 1.4rem;
+    }
+    
+}

@@ -1,0 +1,63 @@
+.footer {
+    width: 100%;
+    min-height: 100px; /* Use min-height to allow dynamic height based on content */
+    padding: 2rem 0;
+    background-color: rgba(19, 19, 19, 0.8);
+    color: white;
+    position: absolute; /* Ensure the footer is not using absolute positioning */
+    
+}
+
+.Footer-Container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+
+.Left {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.Location {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.Location p {
+    line-height: 30px; /* Line height for better readability */
+}
+
+.Right {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.Social {
+    margin-top: 1rem; /* Space above social icons */
+}
+
+h4 {
+    font-size: 1.2rem; /* Font size for headings */
+    padding-bottom: 0.7rem; /* Space below heading */
+}
+
+p {
+    font-size: 1.2rem; /* Font size for paragraphs */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 640px) {
+    .Footer-Container {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+}

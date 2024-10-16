@@ -1,0 +1,75 @@
+.Pricing {
+    width: 100%;
+    padding: 6rem 1rem;
+    background: black;
+}
+
+.Card-Container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards side by side on large screens */
+    grid-gap: 40px;
+}
+
+.Card {
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.Card:hover {
+    background-color: black;
+}
+
+.Card h3 {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.Card p {
+    padding: 10px 0;
+}
+
+.bar {
+    border-bottom: 1px solid white;
+    width: 10%;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.btc {
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+/* Fix the button style */
+.Card .btn {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Card .btn:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 740px) {
+    .Card-Container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr; /* Stacks cards vertically on smaller screens */
+    }
+}
